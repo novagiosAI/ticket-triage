@@ -1,0 +1,33 @@
+{
+  "test_size": 1430,
+  "category": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "majority_baseline": 0.228,
+    "lift": 0.772
+  },
+  "priority": {
+    "accuracy": 0.9007,
+    "macro_f1": 0.8853,
+    "majority_baseline": 0.4056,
+    "lift": 0.4951
+  },
+  "category_only_priority": 0.5126,
+  "by_language": {
+    "ar": {
+      "size": 259.0,
+      "category_accuracy": 1.0,
+      "priority_accuracy": 0.9537
+    },
+    "ary": {
+      "size": 358.0,
+      "category_accuracy": 1.0,
+      "priority_accuracy": 0.8939
+    },
+    "fr": {
+      "size": 813.0,
+      "category_accuracy": 1.0,
+      "priority_accuracy": 0.8868
+    }
+  }
+}
