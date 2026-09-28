@@ -19,6 +19,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
+      # glpi-testkit is not on PyPI yet: install it from its repository so the
+      # dependency resolves. Harmless once it is published; publish.yml keeps the
+      # PyPI-only install on purpose, so a release cannot ship an uninstallable
+      # dependency.
+      - run: pip install "glpi-testkit @ git+https://github.com/novagiosAI/glpi-testkit.git"
       - run: pip install -e ".[dev]"
       - run: ruff check .
       - run: ruff format --check .
