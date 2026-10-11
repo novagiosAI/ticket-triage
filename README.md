@@ -5,8 +5,8 @@
 **A multilingual ITSM ticket classifier — French, Arabic, Darija — trained entirely on synthetic data. CPU only.**
 
 [![CI](https://github.com/novagiosAI/ticket-triage/actions/workflows/ci.yml/badge.svg)](https://github.com/novagiosAI/ticket-triage/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/ticket-triage.svg)](https://pypi.org/project/ticket-triage/)
-[![Python](https://img.shields.io/pypi/pyversions/ticket-triage.svg)](https://pypi.org/project/ticket-triage/)
+[![PyPI](https://img.shields.io/pypi/v/glpi-ticket-triage.svg)](https://pypi.org/project/glpi-ticket-triage/)
+[![Python](https://img.shields.io/pypi/pyversions/glpi-ticket-triage.svg)](https://pypi.org/project/glpi-ticket-triage/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Typed](https://img.shields.io/badge/typing-strict-brightgreen.svg)](https://peps.python.org/pep-0561/)
 
@@ -102,8 +102,12 @@ for your tickets means fine-tuning on your tickets.
 ## Installation
 
 ```bash
-pip install ticket-triage
+pip install glpi-ticket-triage
 ```
+
+The distribution is `glpi-ticket-triage`; the command it installs is `ticket-triage`, and the module to import is `ticket_triage`. The `glpi-`
+prefix keeps it in line with the rest of the suite and avoids a name PyPI
+rejects as too close to an unrelated project.
 
 ## Use it
 
