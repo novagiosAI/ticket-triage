@@ -198,6 +198,27 @@ If you need to clean a *real* export before working on it, see
 [`glpi-anonymizer`](https://github.com/novagiosAI/glpi-anonymizer) and
 [`presidio-mena`](https://github.com/novagiosAI/presidio-mena).
 
+## The suite
+
+`glpi-ticket-triage` is one of six packages Novagios publishes for ITSM and Arabic
+NLP. Each one stands on its own; together they run from pulling tickets out of
+GLPI to a trained classifier, without a single real ticket ever being used.
+
+| Package | What it does |
+|---|---|
+| [`glpi-rest`](https://github.com/novagiosAI/glpi-rest) | Typed client for the GLPI REST API, with automatic recovery of an expired session |
+| [`glpi-anonymizer`](https://github.com/novagiosAI/glpi-anonymizer) | Strips personal data from ticket exports; validates Moroccan check digits before masking |
+| [`presidio-mena`](https://github.com/novagiosAI/presidio-mena) | The same Moroccan identifiers, as Microsoft Presidio recognizers |
+| [`glpi-testkit`](https://github.com/novagiosAI/glpi-testkit) | Synthetic ITIL tickets in French, Arabic and Darija — no source data, so nothing can leak |
+| **`glpi-ticket-triage`** | Category and priority classifier; CPU only, 0.5 MB model — **you are here** |
+| [`arabizi`](https://github.com/novagiosAI/arabizi) | Moroccan Arabizi transliteration and word-level language detection |
+
+All six at once:
+
+```bash
+pip install glpi-rest glpi-anonymizer presidio-mena glpi-testkit glpi-ticket-triage arabizi
+```
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
